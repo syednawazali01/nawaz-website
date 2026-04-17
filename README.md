@@ -1,8 +1,10 @@
-# Nawaz Portfolio
+# Nawaz Website
 
-A personal portfolio website built with React, TypeScript, and Vite.
+Personal portfolio website for Nawaz, built with React, TypeScript, and Vite.
 
-This project presents my background as a CSE student with AIML specialization, along with my interests in AI and ML, computer networks, cybersecurity, and project-based learning.
+## Overview
+
+This project showcases Nawaz's profile, skills, projects, and contact information in a responsive single-page portfolio.
 
 ## Tech Stack
 
@@ -13,19 +15,16 @@ This project presents my background as a CSE student with AIML specialization, a
 
 ## Features
 
-- Responsive personal portfolio layout
-- About, projects, skills, and contact sections
-- Clean component-based structure
-- Project data separated from UI for easier updates
-- Simple setup for local development and production builds
+- Responsive portfolio layout for desktop and mobile
+- Dedicated sections for hero, about, skills, projects, and contact
+- Component-based structure for easier maintenance
+- Centralized content files for simple updates
+- Production-ready build and GitHub Pages deployment setup
 
-
-## Run Locally
-
-To run this project on your PC:
+## Local Development
 
 1. Install [Node.js](https://nodejs.org/).
-2. Download or clone this repository.
+2. Clone this repository or download the project.
 3. Open the project folder in a terminal.
 4. Install dependencies:
 
@@ -39,31 +38,27 @@ npm install
 npm run dev
 ```
 
-6. Open the local URL shown in the terminal, usually:
+6. Open the local URL shown in the terminal, usually `http://localhost:5173`.
 
-```text
-http://localhost:5173
-```
-
-## Available Scripts
-
-Start the development server:
+## Scripts
 
 ```bash
 npm run dev
 ```
 
-Create a production build:
+Starts the Vite development server.
 
 ```bash
 npm run build
 ```
 
-Preview the production build locally:
+Creates the production build.
 
 ```bash
 npm run preview
 ```
+
+Previews the production build locally.
 
 ## Project Structure
 
@@ -78,9 +73,16 @@ src/
   styles.css
 ```
 
+## Deployment
+
+This repository is configured for deployment with GitHub Pages.
+
+After GitHub Pages is enabled in the repository settings, the site will be published from the GitHub Actions workflow at:
+
+`https://syednawazali01.github.io/nawaz-website/`
+
 ## Notes
 
 - Portfolio content is stored in `src/data/`.
 - Reusable page sections are stored in `src/components/sections/`.
-- The projects section is handled in `src/components/Projects.tsx`.
-- The main Vite config file is `vite.config.ts`.
+- Main build configuration lives in `vite.config.ts`.
