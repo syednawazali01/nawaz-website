@@ -23,6 +23,31 @@ export default function HeroSection() {
         <h2>{focusCard.title}</h2>
         <p>{focusCard.description}</p>
 
+        <div
+          className="network-diagram"
+          role="img"
+          aria-label="A client connecting to a server through a router"
+        >
+          <div className="network-node">
+            <span className="node-number">01</span>
+            <span>Client</span>
+          </div>
+          <span className="network-link" aria-hidden="true">
+            <span className="packet-pulse" />
+          </span>
+          <div className="network-node network-node-router">
+            <span className="node-number">02</span>
+            <span>Router</span>
+          </div>
+          <span className="network-link" aria-hidden="true">
+            <span className="packet-pulse packet-pulse-delayed" />
+          </span>
+          <div className="network-node">
+            <span className="node-number">03</span>
+            <span>Server</span>
+          </div>
+        </div>
+
         <ul className="stat-list">
           {focusCard.stats.map((stat) => (
             <li key={stat.label}>

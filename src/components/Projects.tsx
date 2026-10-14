@@ -17,7 +17,7 @@ export default function Projects() {
       </div>
 
       <div className="project-grid project-grid-rich">
-        {projects.map((project) => (
+        {projects.map((project, index) => (
           <a
             key={project.name}
             className={`project-card project-card-link${project.highlight ? ' project-card-featured' : ''}`}
@@ -26,7 +26,9 @@ export default function Projects() {
             rel="noreferrer"
           >
             <div className="project-card-top">
-              <span className="project-kicker">Featured Build</span>
+              <span className="project-kicker">
+                {project.highlight ? 'Featured Build' : 'Project'} / {String(index + 1).padStart(2, '0')}
+              </span>
               <span className="project-tech">{project.tech}</span>
             </div>
 

@@ -8,9 +8,6 @@ import SkillsSection from './components/sections/SkillsSection';
 function App() {
   return (
     <div className="page-shell">
-      <div className="page-glow page-glow-left" />
-      <div className="page-glow page-glow-right" />
-
       <Header />
 
       <main id="top">

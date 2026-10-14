@@ -10,12 +10,12 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    name: 'intelligent-document-summarizer',
+    name: 'NIDS',
     description:
-      'A web app that uses AI to generate clear, accurate summaries of legal and financial documents.',
-    tech: 'TypeScript',
-    tags: ['AI', 'Web App', 'TypeScript'],
-    url: 'https://github.com/syednawazali01/intelligent-document-summarizer',
+      'A Python and Streamlit network intrusion detection demo that classifies traffic as normal or attack using a pre-trained machine-learning model.',
+    tech: 'Python',
+    tags: ['Network Security', 'Machine Learning', 'Streamlit'],
+    url: 'https://github.com/syednawazali01/NIDS',
     highlight: true,
   },
   {
@@ -35,6 +35,15 @@ export const projects: Project[] = [
     tags: ['CLI', 'Python', 'Hardware'],
     url: 'https://github.com/syednawazali01/pc-build-advisor',
     stars: 1,
+  },
+  {
+    name: 'intelligent-document-summarizer',
+    description:
+      'A web app that uses AI to generate clear, accurate summaries of legal and financial documents.',
+    tech: 'TypeScript',
+    tags: ['AI', 'Web App', 'TypeScript'],
+    url: 'https://github.com/syednawazali01/intelligent-document-summarizer',
+    highlight: true,
   },
   {
     name: 'Creator-Tools-Suite',

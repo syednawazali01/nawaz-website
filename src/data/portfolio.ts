@@ -22,11 +22,10 @@ export const navLinks: NavLink[] = [
 ];
 
 export const heroContent = {
-  eyebrow: 'Personal Portfolio',
-  title:
-    'A 3rd year CSE AIML student building skills through projects and hands-on learning.',
+  eyebrow: 'Computer Science · Networks · AIML',
+  title: 'Curious about how networks connect our world.',
   description:
-    'I am currently in my 6th semester of CSE with a specialization in AIML. I am interested in AI and ML, computer networks, and cybersecurity, and I use projects to keep learning and improving as a student engineer.',
+    'I am a third-year CSE student specializing in AIML. I enjoy learning how computer networks work and exploring AI, machine learning, and cybersecurity through hands-on projects.',
   primaryAction: {
     href: '#projects',
     label: 'View my work',
@@ -38,10 +37,10 @@ export const heroContent = {
 };
 
 export const focusCard = {
-  eyebrow: 'Current Focus',
-  title: 'Learning core technical skills through steady hands-on work.',
+  eyebrow: 'Network basics',
+  title: 'Every connection has a story.',
   description:
-    'This portfolio is a simple introduction to my background, interests, and the projects I am using to improve as a student.',
+    'Exploring how devices find each other, share data, and make the internet work.',
   stats: [
     {
       label: 'Academic path',
@@ -60,7 +59,7 @@ export const focusCard = {
 
 export const aboutContent = {
   eyebrow: 'About',
-  title: 'A student portfolio focused on learning, growth, and real projects.',
+  title: 'Learning by building, exploring, and staying curious.',
   summary:
     'I am building my foundation as an engineer by working on projects, improving my technical understanding, and learning how to apply concepts beyond the classroom.',
   northStarLabel: 'North Star',
@@ -70,14 +69,14 @@ export const aboutContent = {
 
 export const skillsSection = {
   eyebrow: 'Skills',
-  title: 'Areas I am studying and improving through practice.',
+  title: 'Networking fundamentals I am learning and exploring.',
   skills: [
-    'CSE with AIML specialization',
-    'AI and machine learning fundamentals',
-    'Computer networks',
-    'Cybersecurity interest',
-    'Project-based learning',
-    'Problem solving and continuous improvement',
+    'TCP/IP and OSI model fundamentals',
+    'IP addressing and subnetting basics',
+    'Routing and switching concepts',
+    'DNS, DHCP, and client-server communication',
+    'Network security and intrusion detection',
+    'Network traffic classification through my NIDS project',
   ],
   journeyLabel: 'Journey Log',
   journey: [

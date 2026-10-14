@@ -10,9 +10,13 @@ export default function SkillsSection() {
 
       <div className="split-grid">
         <article className="panel">
+          <span className="panel-label">Learning Map</span>
           <ul className="skill-list">
-            {skillsSection.skills.map((skill) => (
-              <li key={skill}>{skill}</li>
+            {skillsSection.skills.map((skill, index) => (
+              <li className="skill-node" key={skill}>
+                <span className="skill-index">{String(index + 1).padStart(2, '0')}</span>
+                <span>{skill}</span>
+              </li>
             ))}
           </ul>
         </article>
@@ -20,8 +24,11 @@ export default function SkillsSection() {
         <article className="panel journal-panel">
           <span className="panel-label">{skillsSection.journeyLabel}</span>
           <ul className="journey-list">
-            {skillsSection.journey.map((entry) => (
-              <li key={entry}>{entry}</li>
+            {skillsSection.journey.map((entry, index) => (
+              <li className="journey-node" key={entry}>
+                <span className="journey-index">{String(index + 1).padStart(2, '0')}</span>
+                <span>{entry}</span>
+              </li>
             ))}
           </ul>
         </article>
